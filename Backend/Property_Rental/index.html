@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data Example</title>
+</head>
+<body>
+    <h1>Fetch User Data</h1>
+    <button id="fetchDataBtn">Fetch Data</button>
+    <div id="userData"></div>
+
+    <script>
+        document.getElementById('fetchDataBtn').addEventListener('click', fetchData);
+
+        function fetchData() {
+            fetch('https://localhost:7274/api/User/GetAllUsers', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer YOUR_JWT_TOKEN' // Include JWT token if required
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const userDataDiv = document.getElementById('userData');
+                    userDataDiv.innerHTML = JSON.stringify(data, null, 2);
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+    </script>
+</body>
+</html>
