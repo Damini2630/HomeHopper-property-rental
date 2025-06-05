@@ -1,0 +1,68 @@
+/* LatePaymentNotifications.css */
+
+.late-payment-notifications-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .late-payment-notifications-container h2 {
+    color: #d32f2f; /* A shade of red for emphasis */
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 5px;
+  }
+  
+  .late-payment-notifications-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .late-payment-notifications-container li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .late-payment-notifications-container li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .late-payment-notifications-container li strong {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+  }
+  
+  .late-payment-notifications-container li .late-days {
+    color: #ff9800; /* Orange color for 'Days Late' */
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .late-payment-notifications-container li button {
+    background-color: #4caf50; /* Green for 'Pay Now' button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .late-payment-notifications-container li button:hover {
+    background-color: #388e3c;
+  }
+  
+  .late-payment-notifications-container .no-notifications {
+    color: #777;
+    font-style: italic;
+  }

@@ -1,0 +1,128 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  min-height: auto;
+  height: 100vh;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 0;
+  width: 95%; /* Increase the width */
+  max-width: 550px; /* Increase the maximum width */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex; /* Enable flexbox for potential internal arrangement */
+  flex-direction: column; /* Stack elements vertically by default */
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.auth-icon {
+  font-size: 1.8rem;
+  color: #4a6fa5;
+  margin-bottom: 0.6rem;
+}
+
+.auth-header h2 {
+  color: #333;
+  margin-bottom: 0.2rem;
+  font-size: 1.4rem;
+}
+
+.auth-header p {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0.2rem 0.4rem; /* Add a little horizontal padding */
+}
+
+.input-group svg {
+  color: #777;
+  margin-right: 0.8rem; /* Increase right margin for more space */
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0.2rem 0;
+  background: transparent;
+  font-size: 0.85rem;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.auth-btn:hover {
+  background: #3a5a80;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 0.8rem;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.auth-footer a {
+  color: #4a6fa5;
+  text-decoration: none;
+}
+
+.dashboard-link {
+  color: #3498db;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 6px;
+  border: 1px solid #3498db;
+  border-radius: 0;
+  transition: all 0.3s;
+  font-size: 0.8rem;
+}
+
+.dashboard-link:hover {
+  background: #3498db;
+  color: white;
+}
+
+.auth-footer {
+  margin-top: 12px;
+}
+
+.auth-footer p {
+  margin: 5px 0;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.7rem;
+  margin-top: 2px;
+  display: block;
+}

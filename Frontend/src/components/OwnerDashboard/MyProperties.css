@@ -1,0 +1,209 @@
+.my-properties-container {
+    padding: 20px;
+    font-family: sans-serif;
+}
+ 
+.my-properties-title {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+ 
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+ 
+@media (max-width: 900px) { /* Adjust breakpoint as needed */
+    .property-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Fallback for smaller screens */
+    }
+}
+ 
+.property-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex; /* Enable flexbox for internal layout */
+    flex-direction: column; /* Stack image and details */
+}
+ 
+.property-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+ 
+.property-image-container {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+}
+ 
+.property-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Prevent extra space */
+}
+ 
+.property-details {
+    padding: 15px;
+    flex-grow: 1; /* Allow details to take up remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space vertically */
+}
+ 
+.property-title {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1em; /* Slightly smaller title */
+}
+ 
+.property-info {
+    color: #777;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85em; /* Slightly smaller info text */
+}
+ 
+.property-info svg {
+    margin-right: 5px;
+}
+ 
+.property-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Push actions to the bottom */
+}
+ 
+.edit-button, .delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px; /* Smaller buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+ 
+.delete-button {
+    background-color: #dc3545;
+}
+ 
+.edit-button:hover {
+    background-color: #0056b3;
+}
+ 
+.delete-button:hover {
+    background-color: #c82333;
+}
+ 
+.no-properties {
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+ 
+.loading-properties {
+    color: #555;
+    text-align: center;
+    padding: 20px;
+}
+ 
+.error-loading {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+/* Confirmation Dialog */
+.delete-property-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin: 20px;
+  }
+ 
+  .delete-property-container h2 {
+    color: #d9534f;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .delete-property-container h2 .fa-trash {
+    margin-right: 10px;
+    font-size: 2em;
+  }
+ 
+  .delete-property-container h3 {
+    color: #333;
+    margin: 10px 0;
+  }
+ 
+  .delete-property-container p {
+    font-size: 1.2em;
+    color: #333;
+  }
+ 
+  .delete-property-container .property-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .delete-property-container .delete-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+ 
+  .btn-danger, .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+  }
+ 
+  .btn-danger:hover {
+    background-color: #c9302c;
+  }
+ 
+  .btn-secondary {
+    background-color: #5bc0de;
+    color: #fff;
+  }
+ 
+  .btn-secondary:hover {
+    background-color: #31b0d5;
+  }
+ 
+  .spinner {
+    margin-right: 5px;
+  }
+ 

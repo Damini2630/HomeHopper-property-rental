@@ -1,0 +1,178 @@
+.application-card {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    /* Keep padding on the card for overall spacing */
+    display: flex;
+    justify-content: space-between;
+    /* Align items to the left and right */
+    align-items: flex-start;
+    /* Align items to the top */
+    border-radius: 5px;
+}
+ 
+ 
+.application-details {
+    margin-bottom: 20px;
+    text-align: left;
+    /* Ensure text is left-aligned within its own space */
+}
+ 
+.application-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+ 
+.application-details p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+ 
+.application-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+    justify-content: flex-start;
+    /* Align buttons to the left of their container */
+}
+ 
+.edit-btn,
+.delete-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+ 
+/* Button colors remain the same */
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+ 
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+ 
+.lease-button-container {
+    margin-top: 15px;
+    text-align: left;
+    /* Align the container's content to the left */
+}
+ 
+.lease-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+ 
+.lease-submitted-message {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    border-radius: 5px;
+    text-align: left;
+    /* Align the message's text to the left */
+    font-size: 0.9em;
+    color: #007bff;
+}
+ 
+ 
+ 
+.application-status {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.status-icon {
+    font-size: 1.2rem;
+}
+ 
+.status-pending {
+    display: inline-block; /* Make the background fit the content */
+    padding: 5px 10px;
+    color: #e68e00;
+}
+ 
+.status-approved {
+    display: inline-block; /* Make the background fit the content */
+    padding: 5px 10px;
+    color: #2ecc71;
+}
+ 
+.status-rejected {
+    display: inline-block; /* Make the background fit the content */
+    padding: 5px 10px;
+    color: #e74c3c;
+}
+ 
+.status svg {
+    margin-right: 5px;
+}
+ 
+.applications-list {
+    margin-top: 20px;
+}
+ 
+.application-status {
+ 
+    padding: 6px 12px;
+ 
+    border-radius: 20px;
+ 
+    font-weight: bold;
+ 
+    text-transform: capitalize;
+ 
+    min-width: 100px;
+ 
+    text-align: center;
+ 
+}
+ 
+.status-pending {
+ 
+    background-color: #fff3cd;
+ 
+    color: #856404;
+ 
+}
+ 
+.status-approved,
+.status-accepted {
+ 
+    background-color: #d4edda;
+ 
+    color: #155724;
+ 
+}
+ 
+.status-rejected,
+.status-declined {
+ 
+    background-color: #f8d7da;
+ 
+    color: #721c24;
+ 
+}
+ 
+.status-unknown {
+ 
+    background-color: #e2e3e5;
+ 
+    color: #383d41;
+ 
+}
+ 

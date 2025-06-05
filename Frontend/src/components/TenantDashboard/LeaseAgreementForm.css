@@ -1,0 +1,60 @@
+.lease-agreement-form {
+    padding: 20px;
+  }
+  
+  .lease-agreement-form h1 {
+    margin-bottom: 20px;
+  }
+  
+  .lease-agreement-form div {
+    margin-bottom: 15px;
+  }
+  
+  .lease-agreement-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .lease-agreement-form input[type='number'],
+  .lease-agreement-form input[type='date'],
+  .lease-agreement-form input[type='file'] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .lease-agreement-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .lease-agreement-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffe0e0;
+  }
+  
+  .success-message {
+    color: green;
+    margin-bottom: 10px;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e0ffe0;
+  }

@@ -1,0 +1,81 @@
+.maintenance-layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+ 
+.maintenance-left, .maintenance-right {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.request-list {
+  list-style: none;
+  padding: 0;
+}
+ 
+.request-list li {
+  margin-bottom: 12px;
+  padding: 10px;
+  background: #f7f7f7;
+  border-left: 5px solid #3f86f2;
+  border-radius: 4px;
+}
+ 
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+form button {
+  padding: 10px 16px;
+  background-color: #3f86f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+form button:hover {
+  background-color: #316bd6;
+}
+ 
+/* 🔍 Search bar and result styling */
+.maintenance-left input[type='number'] {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  width: 100%;
+}
+ 
+.maintenance-left button {
+  background-color: #3f86f2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+ 
+.maintenance-left button:hover {
+  background-color: #2d6fd2;
+}
+ 
+.maintenance-left .search-result {
+  background-color: #e8f0ff;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #3f86f2;
+}

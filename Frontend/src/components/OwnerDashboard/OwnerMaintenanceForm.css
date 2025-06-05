@@ -1,0 +1,31 @@
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+   
+  form div {
+    margin-bottom: 12px;
+  }
+   
+  label {
+    font-weight: bold;
+  }
+   
+  input, select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+   
+  button {
+    background-color: #3f86f2;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
